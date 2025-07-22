@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"/>
+    <title>Gallery - Custom Delight</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="./imgs/Custom.png" alt="Logo" width="150" height="auto"></a>
+                </div>
+                <div class="menu-icon">
+                    <i class="fas fa-bars menu-btn" onclick="openNav()"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="sidenav-logo">
+            <img src="./imgs/Custom.png" alt="Logo" width="300">
+        </div>
+        <a href="index.html#home">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menus</a>
+        <a href="gallery.html">Gallery</a>
+
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <main id="gallery">
+        <section id="gallery-showcase">
+            <div class="container">
+                <h2>Gallery</h2>
+                <div class="gallery-grid">
+                    <a href="./imgs/gallery1.jpg" data-lightbox="restaurant-gallery" data-title="Restaurant Interior">
+                        <img src="./imgs/gallery1.jpg" alt="Restaurant Interior">
+                    </a>
+                    <a href="./imgs/gallery2.jpg" data-lightbox="restaurant-gallery" data-title="Fine Dining">
+                        <img src="./imgs/gallery2.jpg" alt="Fine Dining">
+                    </a>
+                    <a href="./imgs/gallery3.jpg" data-lightbox="restaurant-gallery" data-title="Ambiance">
+                        <img src="./imgs/gallery3.jpg" alt="Ambiance">
+                    </a>
+                    <a href="./imgs/gallery4.jpg" data-lightbox="restaurant-gallery" data-title="Gourmet Dish">
+                        <img src="./imgs/gallery4.jpg" alt="Gourmet Dish">
+                    </a>
+                    <a href="./imgs/gallery5.jpg" data-lightbox="restaurant-gallery" data-title="Chef's Special">
+                        <img src="./imgs/gallery5.jpg" alt="Chef's Special">
+                    </a>
+                    <a href="./imgs/gallery6.jpg" data-lightbox="restaurant-gallery" data-title="Dessert">
+                        <img src="./imgs/gallery6.jpg" alt="Dessert">
+                    </a>
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

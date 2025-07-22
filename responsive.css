@@ -1,0 +1,206 @@
+/* responsive.css */
+
+/* General adjustments for smaller screens */
+@media screen and (max-width: 1200px) {
+    header {
+        padding: 1.5rem 1rem;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .menu-icon {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        padding: 10px 15px;
+    }
+
+    #showcase .content h2 {
+        font-size: 3rem;
+    }
+
+    #showcase .content h3 {
+        font-size: 1.75rem;
+    }
+
+    #featured-dishes .container h2,
+    #testimonials .container h2,
+    #contact .container h2 {
+        font-size: 2rem;
+    }
+
+    .dish {
+        width: calc(50% - 2rem);
+    }
+
+    .review {
+        width: calc(50% - 2rem);
+    }
+}
+
+
+/* Responsive adjustments for Featured Dishes */
+@media screen and (max-width: 768px) {
+    .dish {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .dish {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    #showcase .content h2 {
+        font-size: 2.5rem;
+    }
+
+    #showcase .content h3 {
+        font-size: 1.5rem;
+    }
+
+    .dish {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .review {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .reservation-btn {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+
+    #contact .contact-info p {
+        font-size: 0.875rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    #showcase .content h2 {
+        font-size: 2rem;
+    }
+
+    #showcase .content h3 {
+        font-size: 1.25rem;
+    }
+
+    #featured-dishes .container h2,
+    #testimonials .container h2,
+    #contact .container h2 {
+        font-size: 1.5rem;
+    }
+
+    .reservation-btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.875rem;
+    }
+}
+@media screen and (max-width: 992px) {
+    .menu-item {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-item {
+        width: 100%;
+    }
+}
+/* Responsive adjustments for About Us Page */
+@media screen and (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    #about h2 {
+        font-size: 2rem;
+    }
+
+    .about-content img {
+        margin: 0 auto 1rem;
+    }
+
+    #testimonials .testimonials {
+        flex-direction: column;
+    }
+
+    .testimonial {
+        width: 100%;
+    }
+
+    #gallery .gallery-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #gallery .gallery-images img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+/* Responsive adjustments for Gallery Page */
+@media screen and (max-width: 768px) {
+    #gallery h2 {
+        font-size: 2rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Responsive adjustments for Contact Page */
+@media screen and (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+    }
+
+    #contact h2 {
+        font-size: 2rem;
+    }
+
+    #map {
+        height: 300px;
+        margin-top: 1rem;
+    }
+
+    .contact-details {
+        margin: 0 0 1rem 0;
+    }
+}

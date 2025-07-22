@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <title>Responsive Restaurant Website</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="./imgs/Custom.png" alt="Logo" width="150" height="auto"></a>
+                </div>
+                <div class="menu-icon">
+                    <i class="fas fa-bars menu-btn" onclick="openNav()"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="sidenav-logo">
+            <img src="./imgs/Custom.png" alt="Logo" width="300">
+        </div>
+        <a href="index.html#home">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menus</a>
+        <a href="gallery.html">Gallery</a> 
+      
+        <a href="contact.html">Contact</a>
+    </div>
+    
+    <main id="home">
+        <section id="showcase">
+            <div class="container">
+                <div class="content">
+                    <a href="#"><img src="./imgs/Custom.png" alt="Logo" width="750" height="300"></a>
+                    <h2>Surprise your Plate</h2>
+                    <h3>Fine Food + Drink</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured-dishes">
+            <div class="container">
+                <h2>Featured Dishes</h2>
+                <div class="dishes">
+                    <div class="dish">
+                        <img src="./imgs/salmon.jpg" alt="Dish 1">
+                        <h3>Grilled Salmon</h3>
+                        <p>Fresh salmon fillet, grilled to perfection, served with a side of roasted vegetables.</p>
+                    </div>
+                    <div class="dish">
+                        <img src="./imgs/beefsteak.jpg" alt="Dish 2">
+                        <h3>Beef Steak</h3>
+                        <p>Juicy and tender beef steak, seasoned with herbs and spices, served with mashed potatoes.</p>
+                    </div>
+                    <div class="dish">
+                        <img src="./imgs/salad.jpg" alt="Dish 3">
+                        <h3>Caesar Salad</h3>
+                        <p>Crisp romaine lettuce, croutons, and Parmesan cheese, tossed in Caesar dressing.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="testimonials">
+            <div class="container">
+                <h2>Customer Reviews</h2>
+                <div class="reviews">
+                    <div class="review">
+                        <p>"The best dining experience I've ever had! The food was incredible and the service was top-notch."</p>
+                        <h4>John Doe</h4>
+                    </div>
+                    <div class="review">
+                        <p>"Amazing atmosphere and delicious dishes. I highly recommend the grilled salmon!"</p>
+                        <h4>Jane Smith</h4>
+                    </div>
+                    <div class="review">
+                        <p>"A perfect place for a family dinner. The staff is friendly, and the menu has something for everyone."</p>
+                        <h4>Michael Brown</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-info">
+                    <p>Email: info@restaurant.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <button class="reservation-btn">Make a Reservation</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
